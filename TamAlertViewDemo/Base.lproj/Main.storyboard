@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-4E-lum">
+                                <rect key="frame" x="167" y="60" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="普通">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="normalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNU-Dv-IdG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEE-C3-dnh">
+                                <rect key="frame" x="167" y="106" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="左左">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeftAndLeftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mwc-7o-eVy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-RM-2uA">
+                                <rect key="frame" x="167" y="152" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="左右">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftAndRightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="szg-uY-IWJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2P-v9-bsO">
+                                <rect key="frame" x="167" y="198" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="右右">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightAndRightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puS-fB-qCP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl9-y8-504">
+                                <rect key="frame" x="167" y="244" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="右左">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightAndLeftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gs3-b2-Fvf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-hL-ujQ">
+                                <rect key="frame" x="167" y="336" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="上上">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="upAndUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHu-aO-TR4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvS-Xh-8Ex">
+                                <rect key="frame" x="167" y="382" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="下下">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downAndDownAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8a-7V-0WC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up6-gA-Rui">
+                                <rect key="frame" x="167" y="428" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="下上">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downAndUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0je-C0-0JV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-Zy-NTG">
+                                <rect key="frame" x="167" y="290" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="上下">
+                                    <color key="titleColor" red="1" green="0.16578148330063269" blue="0.66685887536161692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="upAndDownAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4F-F7-Jce"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ES7-4E-lum" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2gl-Ti-ADn"/>
+                            <constraint firstItem="OvS-Xh-8Ex" firstAttribute="top" secondItem="0gI-hL-ujQ" secondAttribute="bottom" constant="10" id="2wc-iH-YDh"/>
+                            <constraint firstItem="Up6-gA-Rui" firstAttribute="top" secondItem="OvS-Xh-8Ex" secondAttribute="bottom" constant="10" id="68c-0g-yRj"/>
+                            <constraint firstItem="sz6-Zy-NTG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6wl-tx-tuw"/>
+                            <constraint firstItem="aIi-RM-2uA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9A4-6x-eld"/>
+                            <constraint firstItem="qEE-C3-dnh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EkX-Al-CGH"/>
+                            <constraint firstItem="sz6-Zy-NTG" firstAttribute="top" secondItem="cl9-y8-504" secondAttribute="bottom" constant="10" id="JAr-Vl-ORd"/>
+                            <constraint firstItem="0gI-hL-ujQ" firstAttribute="top" secondItem="sz6-Zy-NTG" secondAttribute="bottom" constant="10" id="RMv-UZ-YS3"/>
+                            <constraint firstItem="cl9-y8-504" firstAttribute="top" secondItem="g2P-v9-bsO" secondAttribute="bottom" constant="10" id="W5z-Ti-8Rq"/>
+                            <constraint firstItem="g2P-v9-bsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WaN-Ks-dET"/>
+                            <constraint firstItem="cl9-y8-504" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wad-bV-HGH"/>
+                            <constraint firstItem="Up6-gA-Rui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPq-hr-aBx"/>
+                            <constraint firstItem="0gI-hL-ujQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="idz-KX-f49"/>
+                            <constraint firstItem="OvS-Xh-8Ex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jlH-eB-aqy"/>
+                            <constraint firstItem="aIi-RM-2uA" firstAttribute="top" secondItem="qEE-C3-dnh" secondAttribute="bottom" constant="10" id="pXe-RV-i6T"/>
+                            <constraint firstItem="g2P-v9-bsO" firstAttribute="top" secondItem="aIi-RM-2uA" secondAttribute="bottom" constant="10" id="tYq-bX-OTZ"/>
+                            <constraint firstItem="qEE-C3-dnh" firstAttribute="top" secondItem="ES7-4E-lum" secondAttribute="bottom" constant="10" id="wu5-1y-cvq"/>
+                            <constraint firstItem="ES7-4E-lum" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ys3-8w-67Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
