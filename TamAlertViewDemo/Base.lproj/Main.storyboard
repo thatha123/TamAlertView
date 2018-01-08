@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mzA-AN-H13"/>
+                        <viewControllerLayoutGuide type="bottom" id="jd0-M4-QHk"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,9 +132,8 @@
                             <constraint firstItem="aIi-RM-2uA" firstAttribute="top" secondItem="qEE-C3-dnh" secondAttribute="bottom" constant="10" id="pXe-RV-i6T"/>
                             <constraint firstItem="g2P-v9-bsO" firstAttribute="top" secondItem="aIi-RM-2uA" secondAttribute="bottom" constant="10" id="tYq-bX-OTZ"/>
                             <constraint firstItem="qEE-C3-dnh" firstAttribute="top" secondItem="ES7-4E-lum" secondAttribute="bottom" constant="10" id="wu5-1y-cvq"/>
-                            <constraint firstItem="ES7-4E-lum" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ys3-8w-67Q"/>
+                            <constraint firstItem="ES7-4E-lum" firstAttribute="top" secondItem="mzA-AN-H13" secondAttribute="bottom" constant="40" id="ys3-8w-67Q"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

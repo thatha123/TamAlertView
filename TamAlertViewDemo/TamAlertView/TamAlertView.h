@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-typedef void(^ClickBlock)();
+typedef void(^ClickBlock)(void);
 
 //动画方向
 typedef enum : NSUInteger {
@@ -39,8 +39,8 @@ typedef enum : NSUInteger {
 //主题字体大小
 @property(nonatomic,copy)UIFont *titleFont;
 //左边按钮
-@property(nonatomic,strong)UIButton *leftBtn;
+@property(nonatomic,weak)UIButton *leftBtn;
 //右边按钮
-@property(nonatomic,strong)UIButton *rightBtn;
+@property(nonatomic,weak)UIButton *rightBtn;
 
 @end

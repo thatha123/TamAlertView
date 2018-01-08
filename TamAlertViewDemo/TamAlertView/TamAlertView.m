@@ -32,9 +32,9 @@ static const CGFloat AnimTime = 1.0;//动画时间
 @property(nonatomic,copy)NSString *cancel;
 @property(nonatomic,copy)NSString *sure;
 
-@property(nonatomic,strong)UILabel *titleLabel;
-@property(nonatomic,strong)UILabel *contentLabel;
-@property(nonatomic,strong)UIScrollView *scrollView;
+@property(nonatomic,weak)UILabel *titleLabel;
+@property(nonatomic,weak)UILabel *contentLabel;
+@property(nonatomic,weak)UIScrollView *scrollView;
 
 @property(nonatomic,assign)TamAnimaType animaType;
 

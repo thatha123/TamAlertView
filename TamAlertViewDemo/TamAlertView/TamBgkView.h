@@ -14,7 +14,7 @@
 
 #define key_window [UIApplication sharedApplication].keyWindow
 
-typedef void(^touchBgkViewBlock)();
+typedef void(^touchBgkViewBlock)(void);
 
 @interface TamBgkView : UIView
 
